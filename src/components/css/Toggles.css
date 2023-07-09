@@ -1,8 +1,8 @@
 .switch {
   position: relative;
   display: inline-block;
-  width: 110px;
-  height: 60px;
+  min-width: 110px;
+  min-height: 60px;
   border-radius: 50px;
   box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
 }
@@ -47,4 +47,19 @@
   background-color: black;
   box-shadow: rgb(0, 0, 0) 3px 3px 6px 0px inset,
     rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+@media (orientation : landscape) and (max-height:400px){
+  .customSwitch{
+    min-width: 60px;
+    min-height: 110px;
+  }
+  .customSlider::before{
+    top: 5px;
+    left: 5px;
+    bottom: none;
+  }
+  .customSwitch input:checked + .customSlider::before{
+    transform: translateY(50px);
+  }
 }

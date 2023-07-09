@@ -79,4 +79,40 @@
   .regulator-mode:nth-child(5) {
     transform: rotate(270deg) translateY(-75px);
   }
+
+  @media (orientation : landscape) and (max-height:400px){
+    .regulator{
+      width: 120px;
+      height: 120px;
+      border: 3px solid #1f1d1c;
+    }
+    .regulator-pointer{
+      width: 4px;
+      height: 50px;
+    }
+    .regulator-pointer::before{
+      width: 2px;
+      height: 10px;
+      left: 1.5px;
+    }
+    .regulator-mode:nth-child(1) {
+      transform: rotate(90deg) translateY(-50px);
+    }
+    
+    .regulator-mode:nth-child(2) {
+      transform: rotate(135deg) translateY(-51px);
+    }
+    
+    .regulator-mode:nth-child(3) {
+      transform: rotate(180deg) translateY(-53px);
+    }
+    
+    .regulator-mode:nth-child(4) {
+      transform: rotate(225deg) translateY(-55px);
+    }
+    
+    .regulator-mode:nth-child(5) {
+      transform: rotate(270deg) translateY(-55px);
+    }
+  }
   
