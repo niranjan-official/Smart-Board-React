@@ -4,6 +4,7 @@ export const AppContext = createContext();
 
 export const AppProvider = ({ children }) => {
     const [value, setValue] = useState(0);
+    const [login, setLogin] = useState(0)
     const [checkboxes, setCheckboxes] = useState({
       switch1: 0,
       switch2: 0,
@@ -12,7 +13,7 @@ export const AppProvider = ({ children }) => {
     });
   
     return (
-      <AppContext.Provider value={{ value, setValue, checkboxes, setCheckboxes }}>
+      <AppContext.Provider value={{ value, setValue, checkboxes, setCheckboxes , login, setLogin}}>
         {children}
       </AppContext.Provider>
     );

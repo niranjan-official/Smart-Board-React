@@ -5,10 +5,12 @@ import Regulator from "./Regulator";
 import { Firebase } from "../Firebase/FirebaseConfig";
 import "firebase/compat/database";
 import { AppContext } from "../Firebase/FirebaseContext";
+import clickSound from '../../audio/click.mp3'
 
 function Section() {
   
   const { checkboxes, setCheckboxes } = useContext(AppContext);
+  const click = new Audio(clickSound)
 
   function handleCheckboxChange(event) {
     const { name, checked } = event.target;
@@ -20,15 +22,19 @@ function Section() {
     switch (name) {
       case "switch1":
         Firebase.database().ref("/switch-1").set(value);
+        click.play()
         break;
       case "switch2":
         Firebase.database().ref("/switch-2").set(value);
+        click.play()
         break;
       case "switch3":
         Firebase.database().ref("/switch-3").set(value);
+        click.play()
         break;
       case "switch4":
         Firebase.database().ref("/switch-4").set(value);
+        click.play()
         break;
       default:
         break;

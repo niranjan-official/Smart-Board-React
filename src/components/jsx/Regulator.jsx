@@ -8,6 +8,8 @@ import { AppContext } from "../Firebase/FirebaseContext";
 
 function Regulator({ name, checked, onChange }) {
   const { value, setValue } = useContext(AppContext);
+  const customSlider = 'customSlider'
+  const customSwitch = 'customSwitch'
 
   const [angle, setAngle] = useState({
     transform: `translate(-50%, -50%) rotate(0deg)`
@@ -58,7 +60,7 @@ function Regulator({ name, checked, onChange }) {
       <RegulatorMeter angle={angle} />
       <div className="reg-switches">
         <div className="reg-toggle">
-          <Toggles name={name} checked={checked} onChange={onChange} />
+          <Toggles name={name} checked={checked} onChange={onChange} customSwitch={customSwitch} customSlider={customSlider}/>
         </div>
 
         <div className="button-case">
