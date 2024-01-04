@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# Smart-Board
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the repository for our IoT-based website that enables seamless control of switchboards and fan regulation in your home from any corner of the world.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Switch Board Control**: Remotely handle switchboards in your home.
+- **Fan Regulation**: Control fan speed with millisecond response time.
+- **React-based Web Interface**: Intuitive and responsive user interface built with React.
+- **Firebase Integration**: Utilizes Firebase for secure password login and real-time database functionality.
+- **State Synchronization**: Integrated mechanism to listen for state changes in switchboards, ensuring immediate updates across all connected devices.
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Prerequisites
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Make sure you have the following installed on your system:
 
-### `npm test`
+- [Node.js](https://nodejs.org/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Installation
 
-### `npm run build`
+1. Clone the repository:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    ```bash
+    git clone https://github.com/niranjan-official/Smart-Board-React.git
+    cd smart-board-react
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Install dependencies:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    ```bash
+    npm install
+    ```
 
-### `npm run eject`
+3. Set up Firebase:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    - Create a Firebase project and set up a Realtime Database.
+    - Obtain your Firebase configuration details.
+    - Add the configuration to the `src/firebase.js` file.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. Start the development server:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    ```bash
+    npm start
+    ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Usage
 
-## Learn More
+1. Open your web browser and go to `http://localhost:3000`.
+2. Log in with the password: `1234`.
+3. Explore the web interface and control your switchboards and fan.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### How to Run (in Bash)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+git clone https://github.com/your-username/iot-home-control.git
+cd iot-home-control
+npm install
+# Set up Firebase and add configuration to src/firebase.js
+npm start
+```
 
-### Code Splitting
+Visit `http://localhost:3000` in your web browser and log in with the password `1234`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to customize and extend the code according to your requirements. Happy home controlling!
